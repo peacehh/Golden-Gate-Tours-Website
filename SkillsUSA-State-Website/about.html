@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+  <!-- importing styles -->
+  <link rel="stylesheet" href="styles/main-styles.css">
+  <link rel="stylesheet" href="styles/navbar-styles.css">
+  <link rel="stylesheet" href="styles/about-styles.css">
+
+  <!-- importing scripts -->
+  <script src="scripts/navbar-script.js" defer></script>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
+    <!-- aria-controls indicates the button controls the navigation for accesability-->
+    <button aria-controls="navigation" aria-expanded="false" class="menu-button"></button>
+    <nav>
+      <ul id="navigation" data-visible="false">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="tours.html">Tours</a>
+        </li>
+        <li class="active">
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="#footer">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="hero-section">
+      <div class="hero-container">
+        <h1 class="hero-text">
+          ABOUT US
+        </h1>
+        <p>
+          Golden Gate Tours (formerly known as Golden Gate Touring company) is a nationally recognized
+          tourism company based in San Francisco, California. We provide top-notch immersive tours that
+          span across the entirety of the Bay Area. We offer tours in the many beautiful natural parks,
+          bustling cities, and vast seascapes. Our tour guides are extremely knowledgeable about the area
+          and our tours are bound to leave you speechless in awe.
+        </p>
+      </div>
+    </section>
+
+    <section id="history-section">
+      <div class="history-container">
+        <h2>History of San Francisco and Golden Gate Tours:</h2>
+        <p>
+          1776 - San Francisco founded by Spanish colonists in search of Riches</br>
+          1963 - Golden Gate Touring Company is founded by Charlee Ainslie in hopes of promoting tourism of the beautiful
+          city he grew up in</br>
+          1978 - Golden Gate Touring Company won the Leland Stanford Award for being the biggest contributor to tourism in
+          the US.</br>
+          1987 - Golden Gate Touring Company has a fleet of 100 tour boats</br>
+          2012 - Golden Gate Touring Company rebrands to Golden Gate Tours</br>
+        </p>
+      </div>
+    </section>
+
+    <section id="faq-section">
+      <h2>FAQ<h2>
+      <h2 class="question">What kind of tours are offered?</h2>
+      <p class="answer">
+        We offer a variety of tour packages, and you can mix and match packages at your personal request. Our basic
+        packages are city tours, park tours, and boat tours.
+      </p>
+      <h2 class="question">How much do tours cost?</h2>
+      <p class="answer">
+        We strive to make sure you pay for what you need. Simply enter in a date, and our specially trademarked touring
+        engine will find you the cheapest packages you will not find anywhere else. Base packages can start as low as
+        $20!
+      </p>
+      <h2 class="question">Do you serve big groups?</h2>
+      <p class="answer">
+        Golden Gate tours believes that the bigger the group, the more enjoyable the tour. We serve groups of all sizes
+        and even give exclusive discounts for larger groups.
+      </p>
+      <h2 class="question">Are there any hidden fees?</h2>
+      <p class="answer">
+        All fees are shown upfront, unlike most other touring companies. The price we offer you is the price you pay.
+      </p>
+    </section>
+  </main>
+  <footer id="footer">
+    <img src="images/logo.png" alt="logo">
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <label for="email">Email: </label>
+      <input type="text" id="email">
+      <label for="question">Question: </label>
+      <input type="text" id="question">
+    </div>
+    <p class="copyright">© Golden Gate Tours 2023. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tours</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+  <!-- importing styles -->
+  <link rel="stylesheet" href="styles/main-styles.css">
+  <link rel="stylesheet" href="styles/navbar-styles.css">
+  <link rel="stylesheet" href="styles/tour-styles.css">
+
+  <!-- importing scripts -->
+  <script src="scripts/navbar-script.js" defer></script>
+  <script src="scripts/costEstimate.js" defer></script>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
+    <!-- aria-controls indicates the button controls the navigation for accesability-->
+    <button aria-controls="navigation" aria-expanded="false" class="menu-button"></button>
+    <nav>
+      <ul id="navigation" data-visible="false">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a  class="active" href="tours.html">Tours</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="#footer">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    <form>
+      <div>
+        <label>
+          <h2>Tour Type:</h2>
+        </label>
+        <div>
+          <input type="radio" id="city" name="types" value="city">
+          <label class="radio-label" for="mars">City</label>
+        </div>
+        <div>
+          <input type="radio" id="park" name="types" value="park">
+          <label class="radio-label" for="moon">Park</label>
+        </div>
+        <div>
+          <input type="radio" id="ocean" name="types" value="ocean">
+          <label class="radio-label" for="venus">Ocean</label>
+        </div>
+      </div>
+      <div>
+        <label for="startDate">
+          <h2>Start Date:</h2>
+        </label>
+        <input type="date" id="startDate">
+      </div>
+      <div>
+        <label for="startDate">
+          <h2>End Date:</h2>
+        </label>
+        <input type="date" id="endDate">
+      </div>
+      <div>
+        <label for="people">
+          <h2>Group Size:</h2>
+        </label>
+        <input type="number" id="people" min="1" placeholder="max 50">
+      </div>
+      <button type="submit" class="default-button" id="submit"> Available Times and Cost</button>
+
+      
+    </form>
+    
+  </main>
+
+  <footer id="footer">
+    <img src="images/logo.png" alt="logo">
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <label for="email">Email: </label>
+      <input type="text" id="email">
+      <label for="question">Question: </label>
+      <input type="text" id="question">
+    </div>
+    <p class="copyright">© Golden Gate Tours 2023. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

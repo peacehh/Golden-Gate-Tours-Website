@@ -1,0 +1,17 @@
+main {
+  height: 100vh;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, rgb(166, 77, 33), rgb(71, 23, 10));
+}
+
+form {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--glass-color);
+  backdrop-filter: blur(var(--glass-blur));
+  gap: 1rem;
+  width:95%;
+}

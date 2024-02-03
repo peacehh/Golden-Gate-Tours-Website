@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Golden Gate Tours</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+  <!-- importing styles -->
+  <link rel="stylesheet" href="styles/main-styles.css">
+  <link rel="stylesheet" href="styles/navbar-styles.css">
+  <link rel="stylesheet" href="styles/index-styles.css">
+
+  <!-- importing scripts -->
+  <script src="scripts/navbar-script.js" defer></script>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <header>
+    <div>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
+    <!-- aria-controls indicates the button controls the navigation for accesability-->
+    <button aria-controls="navigation" aria-expanded="false" class="menu-button"></button>
+    <nav>
+      <ul id="navigation" data-visible="false">
+        <li class="active">
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="tours.html">Tours</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="#footer">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section id="hero-section">
+      <h1 class="hero-text">
+        IMMERSE YOURSELF
+      </h1>
+    </section>
+
+    <section id="attractions-section">
+      <div class=city>
+        <h2>
+          City
+        </h2>
+        <p>
+          Surround yourself in the hustling environment of San Francisco city.
+        </p>
+      </div>
+      <div class="parks">
+        <h2>
+          Parks
+        </h2>
+        <p>
+          Immerse yourself in mother nature’s creations
+        <p>
+      </div>
+      <div class=ocean>
+        <h2>
+          Oceans
+        </h2>
+        <p>
+          Enjoy the vast view of the Pacific Ocean
+        </p>
+      </div>
+
+    </section>
+    <section id="book-section">
+      <div>
+        <h2>Book a Tour</h2>
+        <p>Affordable, outstanding tours that will make you lose yourself in the charm of the bay.
+        </p>
+      </div>
+      <a href="tours.html"><button class="default-button" type="footer-button">Tickets</button></a>
+    </section>
+    </section>
+  </main>
+  <footer id="footer">
+    <img src="images/logo.png" alt="logo">
+
+    <div class="footer-contact">
+      <h2>Contact Us</h2>
+      <label for="email">Email: </label>
+      <input type="text" id="email">
+      <label for="question">Question: </label>
+      <input type="text" id="question">
+    </div>
+    <p class="copyright">© Golden Gate Tours 2023. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
